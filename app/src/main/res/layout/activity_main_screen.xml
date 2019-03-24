@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen"
+    android:background="@color/coolColor">
+
+    <ImageView
+        android:id="@+id/profilePic01"
+        android:background="@drawable/ps_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        />
+    <TextView
+        android:id="@+id/user"
+        android:text="@string/user"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:layout_toEndOf="@id/profilePic01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+        />
+    <TextView
+        android:id="@+id/userName"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/user"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        />
+    <TextView
+        android:id="@+id/followersNum"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/followersNum01"
+        android:layout_below="@+id/userName"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        />
+    <TextView
+        android:id="@+id/followersNum01"
+        android:text="@string/followersNum"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userName"
+        android:layout_toEndOf="@+id/profilePic01"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+
+        />
+    <ListView
+        android:id="@+id/followersList"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/followersNum"
+        android:layout_marginTop="20dp"
+        >
+
+    </ListView>
+
+</RelativeLayout>
